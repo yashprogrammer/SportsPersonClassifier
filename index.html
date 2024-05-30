@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Screen</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Add your custom CSS here -->
+    <style>
+      /* Custom styles for this login page */
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-container {
+        display: flex;
+        flex-direction: row; /* Display contents horizontally */
+        background-color: #f7f7f7; /* Background color for the login container */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .image-container {
+        flex: 1; /* Take up 50% of the container width */
+        background-image: url("/public/6888600.jpg"); /* Replace with your image */
+        background-size: cover;
+        background-position: center;
+      }
+      .form-container {
+        flex: 1; /* Take up 50% of the container width */
+        /* padding: 0 250px; */
+        height: 100vh;
+      }
+
+      .logoImage {
+        text-align: center;
+      }
+      .logo {
+        width: 100px; /* Adjust the logo size as needed */
+        height: auto;
+      }
+
+      .login-dropDown button {
+        background-color: white;
+        width: 100%;
+        color: rgb(106, 106, 106);
+        text-align: left;
+      }
+
+      .formElement {
+        padding: 0 150px;
+      }
+
+      .form-container div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .form-group input {
+        border-color: #454545;
+      }
+
+      .login-dropDown button:hover {
+        background-color: #e4e4e4;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid login-container">
+      <div class="form-container">
+        <div class="logoImage mt-5 mb-5">
+          <img src="public/Logologo.jpg" alt="" srcset="" />
+        </div>
+        <div class="formElement">
+          <h2 class="text-left">Get Started Now!</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your Email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="dropdown login-dropDown">
+              <label for="Course-Dropdown">Course</label>
+              <button
+                class="btn btn-secondary dropdown-toggle rounded-lg"
+                id="Course-Dropdown"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select Your Course
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">BTECH</a></li>
+                <li><a class="dropdown-item" href="#">MTECH</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown login-dropDown">
+              <label for="Role-Dropdown">Role</label>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                id="Role-Dropdown"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select Your Role
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Student</a></li>
+                <li><a class="dropdown-item" href="#">Teacher</a></li>
+              </ul>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block my-4">
+              Login
+            </button>
+          </form>
+          <h6 class="text-center">OR</h6>
+          <div class="text-center">
+            <label for="alreadyRegistered"
+              >Have an account?<a href="">Log In</a></label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="image-container"></div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery (if required) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
